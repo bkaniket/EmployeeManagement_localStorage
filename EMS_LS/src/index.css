@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1e293b;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  border: 1px solid #4a5568;
+  background-color: #2d3748;
+  color: #e2e8f0;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: #0f172a;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+#tasklist::-webkit-scrollbar {
+  height: 8px;
+}
+
+#tasklist::-webkit-scrollbar-thumb {
+  background-color: #4a5568;
+  border-radius: 4px;
+}
